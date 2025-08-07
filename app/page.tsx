@@ -2,26 +2,41 @@ import { User, Mail, Github, Linkedin, ExternalLink } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import Projects from './(sections)/Projects/page'
 import ProjectCard from '@/components/ProjectCard'
+import HeroPage from './(sections)/Hero/page'
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen bg-gray-900 text-white overflow-hidden">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-gray-900/80 backdrop-blur-sm border-b border-gray-800 z-50">
         <div className="max-w-6xl mx-auto px-6 py-4">
-          <div className="flex justify-end space-x-8">
-            <a href="#about" className="text-red-400 hover:text-red-300 transition-colors">
-              About
-            </a>
-            <a href="#projects" className="text-gray-300 hover:text-white transition-colors">
-              Projects
-            </a>
-            <a href="#contact" className="text-gray-300 hover:text-white transition-colors">
-              Contact
-            </a>
+          <div className="flex justify-between items-center">
+            <div className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              Steven Chiang
+            </div>
+            <div className="flex space-x-8">
+              <a href="#home" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                Home
+              </a>
+              <a href="#about" className="text-gray-300 hover:text-white transition-colors">
+                About
+              </a>
+              <a href="#projects" className="text-gray-300 hover:text-white transition-colors">
+                Projects
+              </a>  
+              <a href="#contact" className="text-gray-300 hover:text-white transition-colors">
+                Contact
+              </a>
+            </div>
           </div>
         </div>
       </nav>
+ 
+    
+      
+
+      {/* Hero Section */}
+      <HeroPage />
 
       {/* About Section */}
       <section id="about" className="pt-24 pb-16 px-6">
