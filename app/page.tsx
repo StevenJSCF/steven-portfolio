@@ -1,39 +1,15 @@
-import { User, Mail, Github, Linkedin, ExternalLink } from 'lucide-react'
-import { Button } from "@/components/ui/button"
-import Projects from './(sections)/Projects/page'
-import ProjectCard from '@/components/ProjectCard'
-import HeroPage from './(sections)/Hero/page'
+import { User, Mail, Github, Linkedin, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Projects from "./(sections)/Projects/page";
+import ProjectCard from "@/components/ProjectCard";
+import HeroPage from "./(sections)/Hero/page";
+import NavBar from "@/components/NavBar";
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white overflow-hidden">
+    <div className="min-h-screen bg-gray-900 text-white overflow-x-hidden">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-gray-900/80 backdrop-blur-sm border-b border-gray-800 z-50">
-        <div className="max-w-6xl mx-auto px-6 py-4">
-          <div className="flex justify-between items-center">
-            <div className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Steven Chiang
-            </div>
-            <div className="flex space-x-8">
-              <a href="#home" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                Home
-              </a>
-              <a href="#about" className="text-gray-300 hover:text-white transition-colors">
-                About
-              </a>
-              <a href="#projects" className="text-gray-300 hover:text-white transition-colors">
-                Projects
-              </a>  
-              <a href="#contact" className="text-gray-300 hover:text-white transition-colors">
-                Contact
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
- 
-    
-      
+      <NavBar />
 
       {/* Hero Section */}
       <HeroPage />
@@ -61,10 +37,13 @@ export default function Portfolio() {
             {/* About Text */}
             <div className="max-w-2xl text-center">
               <p className="text-lg text-gray-300 leading-relaxed">
-                Fully committed to the philosophy of life-long learning, I'm a full stack developer with a deep passion 
-                for JavaScript, React and all things web development. The unique combination of creativity, logic, 
-                technology and never running out of new things to discover, drives my excitement and passion for web 
-                development. When I'm not at my computer I like to spend my time reading, keeping fit and playing guitar.
+                Fully committed to the philosophy of life-long learning, I'm a
+                full stack developer with a deep passion for JavaScript, React
+                and all things web development. The unique combination of
+                creativity, logic, technology and never running out of new
+                things to discover, drives my excitement and passion for web
+                development. When I'm not at my computer I like to spend my time
+                reading, keeping fit and playing guitar.
               </p>
             </div>
           </div>
@@ -74,7 +53,6 @@ export default function Portfolio() {
       {/* Projects Section */}
       <Projects />
       {/* Skills Section */}
-
 
       {/* Contact Section */}
       <section id="contact" className="py-16 px-6">
@@ -88,12 +66,13 @@ export default function Portfolio() {
 
           <div className="text-center">
             <p className="text-xl text-gray-300 mb-8">
-              Let's work together! Feel free to reach out for collaborations or just a friendly hello.
+              Let's work together! Feel free to reach out for collaborations or
+              just a friendly hello.
             </p>
-            
+
             <div className="flex justify-center space-x-6 mb-8">
-              <a 
-                href="mailto:hello@example.com" 
+              <a
+                href="mailto:hello@example.com"
                 className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
               >
                 <Mail className="w-5 h-5" />
@@ -102,11 +81,19 @@ export default function Portfolio() {
             </div>
 
             <div className="flex justify-center space-x-4">
-              <Button variant="outline" size="lg" className="border-gray-600 text-gray-300 hover:bg-gray-700">
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-gray-600 text-gray-300 hover:bg-gray-700"
+              >
                 <Github className="w-5 h-5 mr-2" />
                 GitHub
               </Button>
-              <Button variant="outline" size="lg" className="border-gray-600 text-gray-300 hover:bg-gray-700">
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-gray-600 text-gray-300 hover:bg-gray-700"
+              >
                 <Linkedin className="w-5 h-5 mr-2" />
                 LinkedIn
               </Button>
@@ -122,5 +109,5 @@ export default function Portfolio() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
