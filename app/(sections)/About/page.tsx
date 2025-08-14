@@ -31,12 +31,12 @@ export default function AboutPage() {
           <div className="flex flex-col items-center">
             {/* Profile Icon */}
             <div className="mb-8 md:mb-6">
-              <div className="w-44 h-44 md:w-56 md:h-56 rounded-full border-4 border-gradient-to-br p-1 mx-auto flex items-center justify-center">
-                <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center">
+              <div className="relative w-44 h-44 md:w-56 md:h-56 mx-auto flex items-center justify-center">
+                <div className="w-full h-full rounded-full shadow-[0_0_36px_0_rgba(255,255,255,0.35)] overflow-hidden flex items-center justify-center">
                   <Image
-                    src="/images/about-pic.png" 
+                    src="/images/about-pic.png"
                     alt="Profile Picture"
-                    className="w-full h-full rounded-full object-cover"
+                    className="w-full h-full object-cover"
                     width={224}
                     height={224}
                   />
@@ -45,7 +45,7 @@ export default function AboutPage() {
             </div>
             {/* About Text */}
             <div className="max-w-2xl text-center">
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed">
                 Fully committed to the philosophy of life-long learning, I'm a
                 full stack developer with a deep passion for JavaScript, React
                 and all things web development. The unique combination of
