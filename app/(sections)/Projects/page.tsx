@@ -8,10 +8,10 @@ export default function Projects() {
     <section id="projects" className="py-16 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Projects
             <div className="h-2 w-32 bg-gradient-to-r from-red-500 to-red-400 mx-auto mt-2"></div>
-          </h2>
+          </h1>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

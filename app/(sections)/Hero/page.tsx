@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Download, Github, Linkedin, Mail } from "lucide-react";
 import React from "react";
@@ -88,10 +89,13 @@ function HeroPage() {
               {/* Image Container with visible white shadow */}
               <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full shadow-[0_0_36px_0_rgba(255,255,255,0.35)]">
                 <div className="w-full h-full rounded-full overflow-hidden">
-                  <img
+                  <Image
                     src="/images/hero-image.jpg"
                     alt="Steven Chiang - Software Engineer"
                     className="w-full h-full object-cover"
+                    width={384}
+                    height={384}
+                    priority
                   />
                 </div>
               </div>

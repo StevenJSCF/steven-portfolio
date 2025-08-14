@@ -7,7 +7,7 @@ export default function ContactPage() {
     <section id="contact" className="py-16 px-6">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Contact
             <div className="h-2 w-28 bg-gradient-to-r from-red-500 to-red-400 mx-auto mt-2"></div>
           </h2>
