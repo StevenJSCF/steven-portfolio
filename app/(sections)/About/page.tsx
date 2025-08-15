@@ -17,7 +17,7 @@ import {
 import { FaJava } from "react-icons/fa";
 export default function AboutPage() {
   return (
-    <section id="about" className="pt-24 pb-16 px-6">
+    <section id="about" className="pt-24 pb-5 px-6">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
