@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ChevronLeft, ChevronRight, Github, ArrowUpRight } from "lucide-react";
 
 interface Project {
   id: string;
@@ -10,43 +11,108 @@ interface Project {
   technologies: string[];
   image: string;
   description: string;
+  github: string;
+  website: string;
 }
 
 const projects: Project[] = [
   {
     id: "1",
-    title: "Chat PDF",
-    technologies: ["Next.js", "OpenAI", "Clerk", "NeonDB", "AWS"],
-    image: "/placeholder-s1v12.png",
-    description: "AI-powered PDF chat application",
+    title: "Grab My Recipe",
+    technologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "OpenAI",
+      "MongoDB",
+      "Google Cloud",
+    ],
+    image: "/images/grab-my-recipe.png",
+    description:
+      "Web app that extracts step-by-step instructions and ingredients from YouTube cooking videos, making recipes easier to follow.",
+    github: "https://github.com/StevenJSCF/grab-my-recipe",
+    website: "https://grab-my-recipe.vercel.app/",
   },
   {
     id: "2",
-    title: "Easy Cook",
-    technologies: ["Next.js", "OpenAI", "Clerk", "MongoDB", "Stripe"],
-    image: "/ai-human-chefs.png",
-    description: "AI cooking assistant and recipe generator",
+    title: "Private Account & Inventory Management",
+    technologies: ["React", "Next.js", "TypeScript", "PostGreSQL", "AWS"],
+    image: "/images/private-accounting.png",
+    description:
+      "Accounting app created for a small store to manage sales, expenses, customers, and inventory from a single dashboard.",
+    github: "https://github.com/lazydog007/private-accounting",
+    website: "https://proyectogris.com/",
   },
   {
     id: "3",
-    title: "Maze Ball Game",
-    technologies: ["Android Studio", "SpringBoot", "MySQL", "Java"],
-    image: "/placeholder-vrip0.png",
-    description: "Mobile maze ball game with multiplayer features",
+    title: "True Force Technologies",
+    technologies: [
+      "React Native",
+      "Expo",
+      "JavaScript",
+      "Swift",
+      "Android Studios",
+      "STM32",
+    ],
+    image: "/images/true-force-tech.png",
+    description:
+      "Mobile app built for a smart squat rack that measures applied bar pressure through an STM32 microcontroller. The app displays real-time strength and performance data to help athletes track progress.",
+    github: "",
+    website: "https://www.trueforcetechnologies.com/",
   },
   {
     id: "4",
-    title: "Poker Analytics",
-    technologies: ["React", "Node.js", "PostgreSQL", "TypeScript"],
-    image: "/poker-analytics-dashboard.png",
-    description: "Advanced poker statistics and analytics platform",
+    title: "Easy Cook",
+    technologies: ["Next.js", "OpenAI", "Clerk", "MongoDB"],
+    image: "/images/easy-cook.png",
+    description:
+      "AI cooking assistant that generates recipes based on ingredients you have at home.",
+    github: "https://github.com/StevenJSCF/EasyCook-",
+    website: "",
   },
   {
     id: "5",
-    title: "E-Commerce Platform",
-    technologies: ["Next.js", "Stripe", "Prisma", "Tailwind"],
-    image: "/modern-ecommerce-interface.png",
-    description: "Full-stack e-commerce solution with payment integration",
+    title: "Maze Ball Game",
+    technologies: [
+      "Android Studios",
+      "Springboot",
+      "MySQL",
+      "Java",
+      "Node.js",
+      "CI/CD",
+      "Webhooks",
+    ],
+    image: "/images/maze-app.png",
+    description:
+      "Mobile app game inspirated from the popular game (Where's My Water) This engaging game allows players to chat, collaboratively craft new maps in real-time with friends, and engage in multiplayer gameplay against other participants.",
+    github: "https://github.com/StevenJSCF/MazeBall-MobileApp-Game",
+    website: "",
+  },
+  {
+    id: "6",
+    title: "Chat PDF",
+    technologies: [
+      "Next.js",
+      "Typescript",
+      "OpenAI",
+      "Clerk",
+      "MongoDB",
+      "AWS",
+    ],
+    image: "/images/chat-pdf.png",
+    description: "Upload a pdf and chat about its content",
+    github: "https://github.com/StevenJSCF/chatpdf",
+    website: "",
+  },
+  {
+    id: "7",
+    title: "Pokemon Game",
+    technologies: ["C", "C++"],
+    image: "/images/pokemon-app.png",
+    description:
+      "ASCII Pokemon-inspired roguelike built with C and C++, combining turn-based role-playing elements of both Pokemon and roguelike games.",
+    github: "https://github.com/StevenJSCF/Pokemon-game",
+    website: "",
   },
 ];
 
@@ -64,6 +130,18 @@ export default function Projects() {
         behavior: "smooth",
       });
       setCurrentIndex(index);
+    }
+  };
+
+  const nextProject = () => {
+    if (currentIndex < projects.length - 1) {
+      scrollToProject(currentIndex + 1);
+    }
+  };
+
+  const prevProject = () => {
+    if (currentIndex > 0) {
+      scrollToProject(currentIndex - 1);
     }
   };
 
@@ -108,12 +186,12 @@ export default function Projects() {
                 </div>
 
                 {/* Project Description */}
-                <p className="text-gray-300 text-sm text-center mb-4 flex-grow flex items-center justify-center min-h-[48px]">
+                <p className="text-white text-sm text-center mb-4 flex-grow flex items-center justify-center min-h-[48px]">
                   {project.description}
                 </p>
 
                 {/* Technology Tags */}
-                <div className="flex flex-wrap gap-2 justify-center mt-auto">
+                <div className="flex flex-wrap gap-2 justify-center mt-auto mb-4">
                   {project.technologies.map((tech) => (
                     <Badge
                       key={tech}
@@ -124,10 +202,54 @@ export default function Projects() {
                     </Badge>
                   ))}
                 </div>
+
+                {/* GitHub & Website Buttons - Centered */}
+                <div className="flex justify-center gap-4">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-12 h-12 bg-[#24292f] hover:bg-[#1b1f23] rounded-full flex items-center justify-center transform hover:scale-110 transition-all duration-200 group"
+                      aria-label="View on GitHub"
+                    >
+                      <Github className="w-5 h-5 text-white group-hover:text-white" />
+                    </a>
+                  )}
+                  {project.website && (
+                    <a
+                      href={project.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-12 h-12 bg-blue-700 hover:bg-blue-900 rounded-full flex items-center justify-center transform hover:scale-110 transition-all duration-200 group"
+                      aria-label="Visit Website"
+                    >
+                      <ArrowUpRight className="w-4 h-4 text-white ml-1 group-hover:text-white" />
+                    </a>
+                  )}
+                </div>
               </div>
             </Card>
           ))}
         </div>
+      </div>
+
+      {/* Navigation Buttons */}
+      <div className="flex justify-center gap-4 mt-8">
+        <button
+          onClick={prevProject}
+          className="bg-gray-800 border border-gray-700 text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-700 transition-all duration-200"
+          aria-label="Previous Project"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+        <button
+          onClick={nextProject}
+          className="bg-gray-800 border border-gray-700 text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-700 transition-all duration-200"
+          aria-label="Next Project"
+        >
+          <ChevronRight className="w-5 h-5" />
+        </button>
       </div>
     </section>
   );

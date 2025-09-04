@@ -46,13 +46,7 @@ export default function AboutPage() {
             {/* About Text */}
             <div className="max-w-2xl text-center">
               <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed">
-                Fully committed to the philosophy of life-long learning, I'm a
-                full stack developer with a deep passion for JavaScript, React
-                and all things web development. The unique combination of
-                creativity, logic, technology and never running out of new
-                things to discover, drives my excitement and passion for web
-                development. When I'm not at my computer I like to spend my time
-                reading, keeping fit and playing guitar.
+                I’m a full-stack software engineer passionate about solving real-world problems through technology. I enjoy building modern, responsive web applications with the latest frameworks, while also bringing experience in Java from academic projects. I thrive on continuously learning and exploring new tools, and outside of coding I love reading, staying active, and playing different instruments.
               </p>
             </div>
           </div>

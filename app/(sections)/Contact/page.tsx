@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Mail, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -23,7 +25,7 @@ export default function ContactPage() {
               className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
             >
               <Mail className="w-5 h-5" />
-              <span>hello@example.com</span>
+              <span>joshua.chiang12@gmail.com</span>
             </a>
           </div>
 
@@ -31,7 +33,10 @@ export default function ContactPage() {
             <Button
               variant="outline"
               size="lg"
-              className="border-gray-600 text-gray-300 hover:bg-gray-700"
+              className="border-gray-600 text-black hover:bg-gray-700"
+              onClick={() =>
+                window.open("https://github.com/StevenJSCF", "_blank")
+              }
             >
               <Github className="w-5 h-5 mr-2" />
               GitHub
@@ -39,7 +44,10 @@ export default function ContactPage() {
             <Button
               variant="outline"
               size="lg"
-              className="border-gray-600 text-gray-300 hover:bg-gray-700"
+              className="border-gray-600 text-black hover:bg-gray-700"
+              onClick={() =>
+                window.open("https://www.linkedin.com/in/joshua-chiang-ab9224268/", "_blank")
+              }
             >
               <Linkedin className="w-5 h-5 mr-2" />
               LinkedIn
@@ -50,4 +58,3 @@ export default function ContactPage() {
     </section>
   );
 }
-

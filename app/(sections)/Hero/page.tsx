@@ -31,10 +31,10 @@ function HeroPage() {
 
             {/* Description */}
             <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed max-w-lg">
-              Passionate about creating innovative solutions and building
-              exceptional user experiences. I specialize in modern web
-              technologies and love turning complex problems into simple,
-              beautiful designs.
+              Passionate about building impactful software solutions and
+              delivering great user experiences. I enjoy tackling complex
+              challenges and turning ideas into reliable, easy-to-use
+              applications.
             </p>
 
             {/* Buttons */}
@@ -54,6 +54,12 @@ function HeroPage() {
                 variant="outline"
                 size="lg"
                 className="border-gray-600 text-black hover:bg-gray-500 hover:border-gray-500 transform hover:scale-105 transition-all duration-200"
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1tpNxcqfeFGwBuk7Qc3m4sqcCQUj7rZnV/view?usp=sharing",
+                    "_blank"
+                  )
+                }
               >
                 <Download className="w-4 h-4 mr-2" />
                 Download Resume
@@ -63,19 +69,23 @@ function HeroPage() {
             {/* Social Links */}
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://github.com/StevenJSCF"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-12 h-12 bg-[#24292f] hover:bg-[#1b1f23] rounded-full flex items-center justify-center transform hover:scale-110 transition-all duration-200 group"
               >
                 <Github className="w-5 h-5 text-white group-hover:text-white" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/joshua-chiang-ab9224268/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-12 h-12 bg-[#0077b5] hover:bg-[#005983] rounded-full flex items-center justify-center transform hover:scale-110 transition-all duration-200 group"
               >
                 <Linkedin className="w-5 h-5 text-white group-hover:text-white" />
               </a>
               <a
-                href="#"
+                href="mailto:joshua.chiang12@gmail.com"
                 className="w-12 h-12 bg-[#ea4335] hover:bg-[#b31412] rounded-full flex items-center justify-center transform hover:scale-110 transition-all duration-200 group"
               >
                 <Mail className="w-5 h-5 text-white group-hover:text-white" />
