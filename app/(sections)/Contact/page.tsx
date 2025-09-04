@@ -16,7 +16,7 @@ export default function ContactPage() {
         </div>
         <div className="text-center">
           <p className="text-xl text-gray-300 mb-8">
-            Let's work together! Feel free to reach out for collaborations or
+            Let`&apos;`s work together! Feel free to reach out for collaborations or
             just a friendly hello.
           </p>
           <div className="flex justify-center space-x-6 mb-8">

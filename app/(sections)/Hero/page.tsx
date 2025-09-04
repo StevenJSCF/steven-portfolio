@@ -19,7 +19,7 @@ function HeroPage() {
             <div className="space-y-2">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="block mb-2">Hi There,</span>
-                <span className="block mb-2">I'm Steven Chiang</span>
+                <span className="block mb-2">I`&apos;`m Steven Chiang</span>
                 <span className="block">
                   I am a{" "}
                   <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent transition-all duration-500">
