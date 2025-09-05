@@ -20,6 +20,12 @@ function NavBar() {
                 About
               </a>
               <a
+                href="#education"
+                className="text-gray-300 hover:text-white transition-colors font-bold"
+              >
+                Education
+              </a>
+              <a
                 href="#projects"
                 className="text-gray-300 hover:text-white transition-colors font-bold"
               >

@@ -11,6 +11,7 @@ const education = [
 
 function EducationPage() {
   return (
+    <section id = "education">
     <div className="px-6 bg-gray-900">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
@@ -38,6 +39,7 @@ function EducationPage() {
         </div>
       </div>
     </div>
+    </section>
   );
 }
 
