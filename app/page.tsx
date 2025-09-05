@@ -4,6 +4,7 @@ import HeroPage from "./(sections)/Hero/page";
 import NavBar from "@/components/NavBar";
 import AboutPage from "./(sections)/About/page";
 import ContactPage from "./(sections)/Contact/page";
+import EducationPage from "./(sections)/Education/page";
 
 export default function Portfolio() {
   return (
@@ -14,16 +15,17 @@ export default function Portfolio() {
       <HeroPage />  
       {/* About Section */}
       <AboutPage />
+      {/* Education Section */}
+      <EducationPage />
       {/* Projects Section */}
       <Projects />
-      {/* Skills Section */}
       {/* Contact Section */}
-      <ContactPage/>
+      <ContactPage />
 
       {/* Footer */}
       <footer className="border-t border-gray-800 py-8 px-6">
         <div className="max-w-6xl mx-auto text-center text-gray-400">
-          <p>&copy; 2024 Your Name. All rights reserved.</p>
+          <p>&copy; 2025 Joshua Chiang. All rights reserved.</p>
         </div>
       </footer>
     </div>
