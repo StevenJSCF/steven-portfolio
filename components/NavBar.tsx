@@ -10,7 +10,7 @@ function NavBar() {
           {/* Hamburger for mobile */}
           <div className="flex flex-1 justify-between items-center md:justify-center">
             <button
-              className="md:hidden text-cyan-400 focus:outline-none"
+              className="md:hidden text-gray-300 focus:outline-none"
               onClick={() => setOpen((v) => !v)}
               aria-label="Toggle navigation menu"
             >
@@ -31,11 +31,11 @@ function NavBar() {
             </button>
             {/* Desktop Nav */}
             <div
-              className={`hidden md:flex space-x-8${open ? " md:hidden" : ""}`}
+              className={`hidden md:flex space-x-8 px-6${open ? " md:hidden" : ""}`}
             >
               <a
                 href="#home"
-                className="text-cyan-400 hover:text-cyan-300 transition-colors font-bold"
+                className="text-gray-300 hover:text-white transition-colors font-bold"
               >
                 Home
               </a>
