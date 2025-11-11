@@ -17,25 +17,8 @@ interface Project {
 }
 
 const projects: Project[] = [
-  {
+    {
     id: "1",
-    title: "Grab My Recipe",
-    technologies: [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "OpenAI",
-      "MongoDB",
-      "Google Cloud",
-    ],
-    image: "/images/grab-my-recipe.png",
-    description:
-      "Web app that extracts step-by-step instructions and ingredients from YouTube cooking videos, making recipes easier to follow.",
-    github: "https://github.com/StevenJSCF/grab-my-recipe",
-    website: "https://grab-my-recipe.vercel.app/",
-  },
-  {
-    id: "4",
     title: "Service Booking App",
     technologies: [
       "React Native",
@@ -49,10 +32,10 @@ const projects: Project[] = [
     description: (
       <div className="space-y-1">
         <p className="m-0">
-          A modern mobile app for booking services in Venezuela, inspired by
-          Booksy but with a unique and differentiated design.
+          Contributing to a modern service booking app for Venezuela, inspired by Booksy. The app allows users to schedule appointments with local businesses through a clean and intuitive interface. Collaborating with a small team to refine the design, 
+          integrate Supabase authentication, and build cross-platform support for iOS and Android.
         </p>
-        <span className="block mt-1 text-xs italic">
+        <span className="block mt-1 text-xs italic text-red-400">
           (Currently work in progress / beta version)
         </span>
       </div>
@@ -61,7 +44,25 @@ const projects: Project[] = [
     website: "",
   },
   {
-    id: "6",
+    id: "2",
+    title: "Grab My Recipe",
+    technologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "OpenAI",
+      "MongoDB",
+      "Google Cloud",
+      "Docker"
+    ],
+    image: "/images/grab-my-recipe.png",
+    description:
+      "Solo project that transforms YouTube cooking videos into clear, step-by-step recipes with ingredients and instructions, making it easier for users to cook along and save their favorite meals. Try it out!",
+    github: "https://github.com/StevenJSCF/grab-my-recipe",
+    website: "https://grab-my-recipe.vercel.app/",
+  },
+  {
+    id: "3",
     title: "Easy Cook",
     technologies: ["Next.js", "OpenAI", "Clerk", "MongoDB"],
     image: "/images/easy-cook.png",
@@ -71,7 +72,7 @@ const projects: Project[] = [
     website: "",
   },
   {
-    id: "7",
+    id: "4",
     title: "Maze Ball Game",
     technologies: [
       "Android Studios",
@@ -89,7 +90,7 @@ const projects: Project[] = [
     website: "",
   },
   {
-    id: "8",
+    id: "5",
     title: "Chat PDF",
     technologies: [
       "Next.js",
@@ -105,7 +106,7 @@ const projects: Project[] = [
     website: "",
   },
   {
-    id: "9",
+    id: "6",
     title: "Pokemon Game",
     technologies: ["C", "C++"],
     image: "/images/pokemon-app.png",

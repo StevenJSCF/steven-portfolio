@@ -19,17 +19,38 @@ interface Project {
 const projects: Project[] = [
   {
     id: "1",
+    title: "BAF BAF",
+    technologies: ["React", "Next.js", "TypeScript", "PostGreSQL", "AWS", "Figma", "Docker"],
+    image: "/images/bafbaf.png",
+    description: (
+      <div className="space-y-1">
+        <p className="m-0">
+          Developing an e-commerce platform for BAF BAF, a Venezuelan pet food brand under Grupo Proalca. The site allows customers to browse products, learn about nutritional benefits, and make online purchases. 
+          Collaborated with a UX/UI designer to deliver an engaging shopping experience focused on performance, usability, and brand consistency.
+        </p>
+        <span className="block mt-1 text-xs italic text-red-400">
+          (Currently work in progress)
+        </span>
+      </div>
+    ),
+    github: "https://github.com/lazydog007/bafbaf",
+    website: "https://bafbaf.com/",
+  },
+    {
+    id: "2",
     title: "Grupo Proalca",
-    technologies: ["React", "Next.js", "TypeScript", "Figma"],
+    technologies: ["React", "Next.js", "TypeScript", "Figma", "Docker"],
     image: "/images/grupo-proalca.png",
     description: (
       <div className="space-y-1">
         <p className="m-0">
-          A modern mobile app for booking services in Venezuela, inspired by
-          Booksy but with a unique and differentiated design.
+          Developing a modern, multi-brand website for Grupo Proalca, a Venezuelan 
+          agro-industrial company with over 20 years of experience producing high-quality food products. 
+          The platform highlights Proalca’s subsidiaries showcasing their catalogs and company mission. Worked collaboratively with a UX/UI designer 
+          to create a clean, accessible interface focused on performance and usability.
         </p>
-        <span className="block mt-1 text-xs italic">
-          (Currently work in progress / beta version)
+        <span className="block mt-1 text-xs italic text-red-400">
+          (Currently work in progress)
         </span>
       </div>
     ),
@@ -37,26 +58,9 @@ const projects: Project[] = [
     website: "https://grupo-proalca.com/",
   },
   {
-    id: "2",
-    title: "True Force Technologies",
-    technologies: [
-      "React Native",
-      "Expo",
-      "JavaScript",
-      "Swift",
-      "Android Studios",
-      "STM32",
-    ],
-    image: "/images/true-force-tech.png",
-    description:
-      "Mobile app developed in a 6-person team for True Force Technologies, a smart gym startup. Integrated BLE communication with an STM32 microcontroller to display live strength and performance metrics. Built with React Native and Swift for real-time athlete tracking.",
-    github: "",
-    website: "https://www.trueforcetechnologies.com/",
-  },
-  {
-    id: "1",
+    id: "3",
     title: "Private Account & Inventory Management",
-    technologies: ["React", "Next.js", "TypeScript", "PostGreSQL", "AWS"],
+    technologies: ["React", "Next.js", "TypeScript", "PostGreSQL", "AWS", "Docker"],
     image: "/images/private-accounting.png",
     description:
       "Full-stack web app built with a small team for a local business to manage sales, expenses, and inventory in real time. I worked on database design, REST API development, and the responsive dashboard for daily business tracking and analytics.",
@@ -64,7 +68,7 @@ const projects: Project[] = [
     website: "https://proyectogris.com/",
   },
   {
-    id: "2",
+    id: "4",
     title: "True Force Technologies",
     technologies: [
       "React Native",
