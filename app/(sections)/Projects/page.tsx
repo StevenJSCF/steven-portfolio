@@ -35,33 +35,6 @@ const projects: Project[] = [
     website: "https://grab-my-recipe.vercel.app/",
   },
   {
-    id: "2",
-    title: "Private Account & Inventory Management",
-    technologies: ["React", "Next.js", "TypeScript", "PostGreSQL", "AWS"],
-    image: "/images/private-accounting.png",
-    description:
-      "Accounting app created for a small store to manage sales, expenses, customers, and inventory from a single dashboard.",
-    github: "https://github.com/lazydog007/private-accounting",
-    website: "https://proyectogris.com/",
-  },
-  {
-    id: "3",
-    title: "True Force Technologies",
-    technologies: [
-      "React Native",
-      "Expo",
-      "JavaScript",
-      "Swift",
-      "Android Studios",
-      "STM32",
-    ],
-    image: "/images/true-force-tech.png",
-    description:
-      "Mobile app built for a smart squat rack that measures applied bar pressure through an STM32 microcontroller. The app displays real-time strength and performance data to help athletes track progress.",
-    github: "",
-    website: "https://www.trueforcetechnologies.com/",
-  },
-  {
     id: "4",
     title: "Service Booking App",
     technologies: [
@@ -74,33 +47,18 @@ const projects: Project[] = [
     ],
     image: "/images/booking-app.png",
     description: (
-      <>
-        A modern mobile app for booking services in Venezuela, inspired by
-        Booksy but with a unique and differentiated design.
+      <div className="space-y-1">
+        <p className="m-0">
+          A modern mobile app for booking services in Venezuela, inspired by
+          Booksy but with a unique and differentiated design.
+        </p>
         <span className="block mt-1 text-xs italic">
-          (Currently work in progress)
+          (Currently work in progress / beta version)
         </span>
-      </>
+      </div>
     ),
-    github: "",
+    github: "https://github.com/Gavince1803/AgendaVE",
     website: "",
-  },
-  {
-    id: "5",
-    title: "True Force Technologies",
-    technologies: [
-      "React Native",
-      "Expo",
-      "JavaScript",
-      "Swift",
-      "Android Studios",
-      "STM32",
-    ],
-    image: "/images/true-force-tech.png",
-    description:
-      "Mobile app built for a smart squat rack that measures applied bar pressure through an STM32 microcontroller. The app displays real-time strength and performance data to help athletes track progress.",
-    github: "",
-    website: "https://www.trueforcetechnologies.com/",
   },
   {
     id: "6",
@@ -228,9 +186,9 @@ export default function Projects() {
                 </div>
 
                 {/* Project Description */}
-                <p className="text-white text-sm text-center mb-4 flex-grow flex items-center justify-center min-h-[48px]">
+                <div className="text-white text-sm text-center mb-4 flex-grow flex items-center justify-center min-h-[48px]">
                   {project.description}
-                </p>
+                </div>
 
                 {/* Technology Tags */}
                 <div className="flex flex-wrap gap-2 justify-center mt-auto mb-4">
