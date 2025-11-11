@@ -5,7 +5,7 @@ const education = [
     degree: "B.S. in Software Engineering",
     school: "Iowa State University of Science and Technology",
     years: "2021 - 2025",
-    gpa: "GPA: 3.66/4.0",
+    gpa: "GPA: 3.68/4.0",
   },
 ];
 

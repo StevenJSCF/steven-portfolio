@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
+import type { ReactNode } from "react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ChevronLeft, ChevronRight, Github, ArrowUpRight } from "lucide-react";
@@ -10,7 +11,7 @@ interface Project {
   title: string;
   technologies: string[];
   image: string;
-  description: string;
+  description: ReactNode;
   github: string;
   website: string;
 }
@@ -62,6 +63,47 @@ const projects: Project[] = [
   },
   {
     id: "4",
+    title: "Service Booking App",
+    technologies: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Supabase",
+      "Android Studios",
+      "iOS Swift",
+    ],
+    image: "/images/booking-app.png",
+    description: (
+      <>
+        A modern mobile app for booking services in Venezuela, inspired by
+        Booksy but with a unique and differentiated design.
+        <span className="block mt-1 text-xs italic">
+          (Currently work in progress)
+        </span>
+      </>
+    ),
+    github: "",
+    website: "",
+  },
+  {
+    id: "5",
+    title: "True Force Technologies",
+    technologies: [
+      "React Native",
+      "Expo",
+      "JavaScript",
+      "Swift",
+      "Android Studios",
+      "STM32",
+    ],
+    image: "/images/true-force-tech.png",
+    description:
+      "Mobile app built for a smart squat rack that measures applied bar pressure through an STM32 microcontroller. The app displays real-time strength and performance data to help athletes track progress.",
+    github: "",
+    website: "https://www.trueforcetechnologies.com/",
+  },
+  {
+    id: "6",
     title: "Easy Cook",
     technologies: ["Next.js", "OpenAI", "Clerk", "MongoDB"],
     image: "/images/easy-cook.png",
@@ -71,7 +113,7 @@ const projects: Project[] = [
     website: "",
   },
   {
-    id: "5",
+    id: "7",
     title: "Maze Ball Game",
     technologies: [
       "Android Studios",
@@ -89,7 +131,7 @@ const projects: Project[] = [
     website: "",
   },
   {
-    id: "6",
+    id: "8",
     title: "Chat PDF",
     technologies: [
       "Next.js",
@@ -105,7 +147,7 @@ const projects: Project[] = [
     website: "",
   },
   {
-    id: "7",
+    id: "9",
     title: "Pokemon Game",
     technologies: ["C", "C++"],
     image: "/images/pokemon-app.png",
