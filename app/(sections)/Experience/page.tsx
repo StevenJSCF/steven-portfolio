@@ -17,107 +17,76 @@ interface Project {
 }
 
 const projects: Project[] = [
-    {
+  {
     id: "1",
-    title: "Service Booking App",
-    technologies: [
-      "React Native",
-      "Expo",
-      "TypeScript",
-      "Supabase",
-      "Android Studios",
-      "iOS Swift",
-    ],
-    image: "/images/booking-app.png",
+    title: "BAF BAF",
+    technologies: ["React", "Next.js", "TypeScript", "PostGreSQL", "AWS", "Figma", "Docker"],
+    image: "/images/bafbaf.png",
     description: (
       <div className="space-y-1">
         <p className="m-0">
-          Contributing to a modern service booking app for Venezuela, inspired by Booksy. The app allows users to schedule appointments with local businesses through a clean and intuitive interface. Collaborating with a small team to refine the design, 
-          integrate Supabase authentication, and build cross-platform support for iOS and Android.
+          Developing an e-commerce platform for BAF BAF, a Venezuelan pet food brand under Grupo Proalca. The site allows customers to browse products, learn about nutritional benefits, and make online purchases. 
+          Collaborated with a UX/UI designer to deliver an engaging shopping experience focused on performance, usability, and brand consistency.
         </p>
         <span className="block mt-1 text-xs italic text-red-400">
-          (Currently work in progress / beta version)
+          (Currently work in progress)
         </span>
       </div>
     ),
-    github: "https://github.com/Gavince1803/AgendaVE",
-    website: "",
+    github: "https://github.com/lazydog007/bafbaf",
+    website: "https://bafbaf.com/",
   },
-  {
+    {
     id: "2",
-    title: "Grab My Recipe",
-    technologies: [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "OpenAI",
-      "MongoDB",
-      "Google Cloud",
-      "Docker"
-    ],
-    image: "/images/grab-my-recipe.png",
-    description:
-      "Solo project that transforms YouTube cooking videos into clear, step-by-step recipes with ingredients and instructions, making it easier for users to cook along and save their favorite meals. Try it out!",
-    github: "https://github.com/StevenJSCF/grab-my-recipe",
-    website: "https://grab-my-recipe.vercel.app/",
+    title: "Grupo Proalca",
+    technologies: ["React", "Next.js", "TypeScript", "Figma", "Docker"],
+    image: "/images/grupo-proalca.png",
+    description: (
+      <div className="space-y-1">
+        <p className="m-0">
+          Developing a modern, multi-brand website for Grupo Proalca, a Venezuelan 
+          agro-industrial company with over 20 years of experience producing high-quality food products. 
+          The platform highlights Proalca’s subsidiaries showcasing their catalogs and company mission. Worked collaboratively with a UX/UI designer 
+          to create a clean, accessible interface focused on performance and usability.
+        </p>
+        <span className="block mt-1 text-xs italic text-red-400">
+          (Currently work in progress)
+        </span>
+      </div>
+    ),
+    github: "https://github.com/lazydog007/grupoproalca-website",
+    website: "https://grupo-proalca.com/",
   },
   {
     id: "3",
-    title: "Easy Cook",
-    technologies: ["Next.js", "OpenAI", "Clerk", "MongoDB"],
-    image: "/images/easy-cook.png",
+    title: "Private Account & Inventory Management",
+    technologies: ["React", "Next.js", "TypeScript", "PostGreSQL", "AWS", "Docker"],
+    image: "/images/private-accounting.png",
     description:
-      "AI cooking assistant that generates recipes based on ingredients you have at home.",
-    github: "https://github.com/StevenJSCF/EasyCook-",
-    website: "",
+      "Full-stack web app built with a small team for a local business to manage sales, expenses, and inventory in real time. I worked on database design, REST API development, and the responsive dashboard for daily business tracking and analytics.",
+    github: "https://github.com/lazydog007/private-accounting",
+    website: "https://proyectogris.com/",
   },
   {
     id: "4",
-    title: "Maze Ball Game",
+    title: "True Force Technologies",
     technologies: [
+      "React Native",
+      "Expo",
+      "JavaScript",
+      "Swift",
       "Android Studios",
-      "Springboot",
-      "MySQL",
-      "Java",
-      "Node.js",
-      "CI/CD",
-      "Webhooks",
+      "STM32",
     ],
-    image: "/images/maze-app.png",
+    image: "/images/true-force-tech.png",
     description:
-      "Mobile app game inspirated from the popular game (Where's My Water) This engaging game allows players to chat, collaboratively craft new maps in real-time with friends, and engage in multiplayer gameplay against other participants.",
-    github: "https://github.com/StevenJSCF/MazeBall-MobileApp-Game",
-    website: "",
-  },
-  {
-    id: "5",
-    title: "Chat PDF",
-    technologies: [
-      "Next.js",
-      "Typescript",
-      "OpenAI",
-      "Clerk",
-      "MongoDB",
-      "AWS",
-    ],
-    image: "/images/chat-pdf.png",
-    description: "Upload a pdf and chat about its content",
-    github: "https://github.com/StevenJSCF/chatpdf",
-    website: "",
-  },
-  {
-    id: "6",
-    title: "Pokemon Game",
-    technologies: ["C", "C++"],
-    image: "/images/pokemon-app.png",
-    description:
-      "ASCII Pokemon-inspired roguelike built with C and C++, combining turn-based role-playing elements of both Pokemon and roguelike games.",
-    github: "https://github.com/StevenJSCF/Pokemon-game",
-    website: "",
+      "Mobile app developed in a 6-person team for True Force Technologies, a smart gym startup. Integrated BLE communication with an STM32 microcontroller to display live strength and performance metrics. Built with React Native and Swift for real-time athlete tracking.",
+    github: "",
+    website: "https://www.trueforcetechnologies.com/",
   },
 ];
 
-export default function Projects() {
+export default function Experience() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
@@ -152,7 +121,7 @@ export default function Projects() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Projects
+            Experience
             <div className="h-2 w-24 bg-gradient-to-r from-red-500 to-red-400 mx-auto mt-2"></div>
           </h1>
         </div>
@@ -187,9 +156,9 @@ export default function Projects() {
                 </div>
 
                 {/* Project Description */}
-                <div className="text-white text-sm text-center mb-4 flex-grow flex items-center justify-center min-h-[48px]">
+                <p className="text-white text-sm text-center mb-4 flex-grow flex items-center justify-center min-h-[48px]">
                   {project.description}
-                </div>
+                </p>
 
                 {/* Technology Tags */}
                 <div className="flex flex-wrap gap-2 justify-center mt-auto mb-4">

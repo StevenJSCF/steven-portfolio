@@ -5,6 +5,7 @@ import NavBar from "@/components/NavBar";
 import AboutPage from "./(sections)/About/page";
 import ContactPage from "./(sections)/Contact/page";
 import EducationPage from "./(sections)/Education/page";
+import Experience from "./(sections)/Experience/page";
 
 export default function Portfolio() {
   return (
@@ -17,6 +18,8 @@ export default function Portfolio() {
       <AboutPage />
       {/* Education Section */}
       <EducationPage />
+      {/* Experience Section */}
+      <Experience />
       {/* Projects Section */}
       <Projects />
       {/* Contact Section */}

@@ -56,7 +56,7 @@ function HeroPage() {
                 className="border-gray-600 text-black hover:bg-gray-500 hover:border-gray-500 transform hover:scale-105 transition-all duration-200"
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1tpNxcqfeFGwBuk7Qc3m4sqcCQUj7rZnV/view?usp=sharing",
+                    "https://drive.google.com/file/d/1QqIgxtiL60dMbV5ZOovWcKUoiYlSU4sv/view?usp=sharing",
                     "_blank"
                   )
                 }
